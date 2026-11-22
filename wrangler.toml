@@ -1,0 +1,8 @@
+name = "apex-precision-cnc"
+main = "dist/server/index.js"
+compatibility_date = "2026-11-21"
+workers_dev = true
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "apex-precision-cnc-rfq"
