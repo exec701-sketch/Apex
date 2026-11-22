@@ -9,6 +9,6 @@ The photos in `assets/` are crops of the supplied mockups. The Windows script `c
 
 ## Deploy from GitHub
 
-Create a private R2 bucket named `apex-precision-cnc-rfq` in the target Cloudflare account. In Workers & Pages, import the GitHub repository as a Worker with the production branch set to `main`. Use the repository root, `npm run build` as the build command, and `npx wrangler deploy` as the deploy command. The Worker name in Cloudflare should match `apex-precision-cnc` in `wrangler.toml`.
+Create a private R2 bucket named `apex-precision-cnc-rfq` in the target Cloudflare account. In Workers & Pages, open the existing `fancy-shadow-8bda` Worker and connect the GitHub repository under Settings → Builds. Use the production branch `main`, the repository root, `npm run build` as the build command, and `npx wrangler deploy` as the deploy command. The configured Worker name targets the existing `fancy-shadow-8bda.exec701.workers.dev` URL in the account with the `exec701` Workers subdomain.
 
 After deployment, open `/contact` on the public Worker URL and confirm a test submission creates a JSON record under `rfq/` in the private bucket.
