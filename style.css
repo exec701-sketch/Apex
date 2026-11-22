@@ -42,3 +42,5 @@ main{max-width:1650px;margin:auto;padding:0 var(--gap) var(--gap);display:grid;g
 @media(max-width:350px){.footer-grid{grid-template-columns:1fr}}
 .page-home .hero h1{line-height:1.1}
 .page-home .hero h1 strong{margin-top:.14em}
+.header-logo{display:block;flex:none;width:clamp(140px,18vw,265px)}
+.header-logo img{height:auto;mix-blend-mode:multiply}
